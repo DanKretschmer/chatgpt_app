@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <!-- ScrollView for the TextView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:text="How can I help you today?" />
+    </ScrollView>
+
+    <!-- EditText for user input -->
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48sp"
+        android:id="@+id/editText"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:scrollbars="vertical"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:hint="Message ChatGPT..."
+        android:textColorHint="@color/light_gray" />
+    <!--  android:background="@color/dark_gray"-->
+    <!-- Button for sending messages -->
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button"
+        android:textColor="@color/white"
+        android:background="@color/gray"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        />
+</LinearLayout>
